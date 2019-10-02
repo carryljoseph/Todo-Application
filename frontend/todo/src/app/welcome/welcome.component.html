@@ -1,0 +1,15 @@
+<H1>Welcome!</H1>
+
+<div class='container'>
+Welcome to the App {{name}}! You can manage your todos <a routerLink='/todos'>here</a>
+</div>
+
+<div class='container'>
+    Click here to show message: 
+    <button (click)='getWelcomeMsgWithParam()' class='btn btn-success'>Show Message</button>
+</div>
+
+<div class='container' *ngIf='serviceMessage'>
+    <h2>Message from welcome service:</h2> 
+    {{serviceMessage}}
+</div>
